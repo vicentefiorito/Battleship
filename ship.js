@@ -6,6 +6,9 @@ const ship = () => {
         else if(type === 'Battleship') length = 4
         else if(type === 'Cruiser' || type == 'Submarine') length = 3
         else if(type === 'Destroyer') length = 2
+        else {
+            return 'No ship was found with that type'
+        }
         return length
     }
 
